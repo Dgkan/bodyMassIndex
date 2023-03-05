@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double kg, length, massIndex;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Lütfen boyunuzu (metre cinsinden) giriniz: ");
+        length = inp.nextDouble();
+        System.out.print("Lütfen kilonuzu giriniz: ");
+        kg = inp.nextDouble();
+
+        massIndex = kg / (length*length);
+        System.out.println("Vücut Kitle İndeksiniz: " + massIndex);
+
+    }
+}
